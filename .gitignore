@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+.DS_Store
+
+# Android Studio
+.idea/
+*.iml
+*.apk
+*.ap_
+*.dex
+*.class
+.classpath
+.project
+.settings/
+local.properties
+proguard-rules.pro
+
+# Android
+bin/
+gen/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# Compiled
+*.o
+*.so
+*.jar
