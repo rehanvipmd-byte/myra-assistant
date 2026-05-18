@@ -3,6 +3,8 @@ package com.myra.assistant.ui.main
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import androidx.databinding.DataBindingUtil
+import com.myra.assistant.R
 import com.myra.assistant.databinding.ItemChatMessageBinding
 
 data class ChatMessage(
@@ -21,8 +23,9 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
-        val binding = ItemChatMessageBinding.inflate(
+        val binding: ItemChatMessageBinding = DataBindingUtil.inflate(
             LayoutInflater.from(parent.context),
+            R.layout.item_chat_message,
             parent,
             false
         )
