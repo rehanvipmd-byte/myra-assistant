@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <domain-configs>
+        <domain-config>
+            <domain>api.generativelanguage.com</domain>
+            <domain>generativelanguage.googleapis.com</domain>
+            <trust-anchors>
+                <trust-anchor src="system" />
+            </trust-anchors>
+        </domain-config>
+        <domain-config>
+            <domain includeSubdomains="true">example.com</domain>
+            <trust-anchors>
+                <trust-anchor src="@raw/my_ca" />
+            </trust-anchors>
+            <pin-set expiration="2025-12-31">
+                <pin digest="SHA-256">7HIpactkIAq2Y49orFOOQKurQxm2uJ1zG79LSJoSswQ=</pin>
+            </pin-set>
+        </domain-config>
+    </domain-configs>
+</data-extraction-rules>
